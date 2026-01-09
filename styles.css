@@ -312,3 +312,36 @@ input:focus, textarea:focus{outline:2px solid rgba(228,30,38,.25); border-color:
   .photo-strip img{height:200px}
   .hero h1{font-size:36px}
 }
+.use-cases {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.use-cases li {
+  margin: 8px 0;
+}
+
+.use-cases-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+/* Make the right column visually balance the left on desktop */
+@media (min-width: 981px) {
+  .highlight {
+    padding: 18px;
+  }
+}
+@media (min-width: 981px) {
+  .split {
+    align-items: stretch;
+  }
+  .highlight {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .callout {
+    margin-top: auto; /* pushes callout to the bottom for a clean finish */
+  }
+}
