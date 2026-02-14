@@ -89,11 +89,11 @@ a:hover{color:var(--crimson)}
 .hero-bg{
   position:absolute; inset:0;
   background:
-    linear-gradient(90deg, rgba(232,242,245,.95), rgba(232,242,245,.75)),
-    url("https://images.unsplash.com/photo-1672552226380-486fe900b322?auto=format&fit=crop&w=2000&q=80")
- center/cover no-repeat;
+    linear-gradient(90deg, rgba(232,242,245,.92), rgba(232,242,245,.65)),
+    url("assets/efs-warehouse.jpg") center/cover no-repeat;
   transform:scale(1.03);
 }
+
 .hero-inner{
   position:relative;
   display:grid;
