@@ -44,15 +44,32 @@ a:hover{color:var(--crimson)}
 
 .site-header{
   position:sticky;top:0;z-index:50;
-  background:rgba(255,255,255,.92);
+  background:rgba(255,255,255,.97);
   backdrop-filter:saturate(180%) blur(10px);
   border-bottom:1px solid var(--border);
 }
+.header-topbar{
+  background:var(--crimson);
+  padding:7px 0;
+}
+.header-topbar-inner{
+  display:flex;align-items:center;justify-content:flex-end;
+}
+.header-contact-items{
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.header-contact-item{
+  display:flex;align-items:center;gap:6px;
+  color:rgba(255,255,255,.9);font-size:13px;font-weight:500;
+  text-decoration:none;
+}
+.header-contact-item svg{opacity:.85;flex-shrink:0}
+.header-contact-item:hover{color:#fff}
 .header-inner{
   display:flex;align-items:center;justify-content:space-between;
-  padding:14px 0;
+  padding:10px 0;
 }
-.brand-logo{height:44px;width:auto;display:block}
+.brand-logo{height:68px;width:auto;display:block}
 
 .site-nav{display:flex;gap:18px;align-items:center}
 .site-nav a{font-weight:600;font-size:14px}
@@ -293,12 +310,14 @@ input:focus, textarea:focus{outline:2px solid rgba(228,30,38,.25); border-color:
 }
 
 @media (max-width: 620px){
+  .header-contact-items{gap:10px}
+  .header-contact-item:nth-child(3){display:none}
   .site-nav{display:none}
   .nav-toggle{display:inline-block}
   .site-nav.open{
     display:flex;
     position:absolute;
-    right:20px; top:70px;
+    right:20px; top:90px;
     background:#fff;
     border:1px solid var(--border);
     border-radius: 16px;
